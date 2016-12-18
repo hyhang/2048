@@ -4,8 +4,16 @@
 ## 框架 ##
 使用MVC（Model View Controller）框架，将业务逻辑、数据、界面显示分离来组织代码。
 
-## 游戏逻辑 ##
+## 游戏架构 ##
+UI —— HTML/CSS
 
+游戏主逻辑 —— js/jquery
+
+支撑逻辑 —— js
+
+动画逻辑 —— js/jquery
+
+游戏数据
 
 ## 演示 ##
 Demo的演示地址：[2048演示](https://hyhang.github.io/2048/)
