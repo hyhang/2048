@@ -3,3 +3,9 @@
 
 ## 框架 ##
 使用MVC（Model View Controller）框架，将业务逻辑、数据、界面显示分离来组织代码。
+
+## 游戏逻辑 ##
+
+
+## 演示 ##
+Demo的演示地址：[2048演示](https://hyhang.github.io/2048/)
