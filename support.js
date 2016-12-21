@@ -113,3 +113,13 @@ function noBlockVertical( col , row1 , row2 , board ){
 	}
 	return true;
 }
+
+function noMove(){
+	if( canMoveUp(board) || 
+		canMoveRight(board) ||
+		canMoveDown(board) ||
+		canMoveLeft(board)){
+		return false;
+	}
+	return true;
+}

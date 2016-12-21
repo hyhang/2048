@@ -11,6 +11,8 @@ function newgame(){
 	// 在随机两个格子生成数字
 	generateOneNumber();
 	generateOneNumber();
+	//清除gameover界面
+	$('.gameover-box').remove();
 }
 
 function init(){
@@ -82,26 +84,26 @@ $(document).keydown(function(event){
 	switch(event.keyCode){
 		case 37 : //left
 			if(moveLeft()){
-				generateOneNumber();
-				//isgameover();
+				setTimeout("generateOneNumber()",210);
+				setTimeout("isgameover()",300);
 			}
 			break;
 		case 38 : //up
 			if(moveUp()){
-				generateOneNumber();
-				//isgameover();
+				setTimeout("generateOneNumber()",210);
+				setTimeout("isgameover()",300);
 			}
 			break;
 		case 39 : //right
 			if(moveRight()){
-				generateOneNumber();
-				//isgameover();
+				setTimeout("generateOneNumber()",210);
+				setTimeout("isgameover()",300);
 			}
 			break;
 		case 40 : //down
 			if(moveDown()){
-				generateOneNumber();
-				//isgameover();
+				setTimeout("generateOneNumber()",210);
+				setTimeout("isgameover()",300);
 			}
 			break;
 		default : //default
@@ -110,7 +112,13 @@ $(document).keydown(function(event){
 });
 
 function isgameover(){
+	if(nospace(board) && noMove(board)){
+		gameover();
+	}
+}
 
+function gameover(){
+	$("#grid-container").append('<div class="gameover-box"><p class="gameover-text">Game Over</p></div>');
 }
 
 function moveLeft(){
