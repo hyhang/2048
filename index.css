@@ -1,3 +1,6 @@
+body {
+	background-image: url(bg.jpg);
+}
 header {
 	display: block;
 	width:600px;

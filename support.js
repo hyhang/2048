@@ -123,3 +123,7 @@ function noMove(){
 	}
 	return true;
 }
+
+function updateScore(score){
+	$('#score').text(score);
+}
