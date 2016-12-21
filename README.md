@@ -13,7 +13,7 @@ UI —— HTML/CSS
 
 动画逻辑 —— js/jquery
 
-游戏数据
+游戏数据 —— 2048游戏数据简单，放在main.js中。
 
 ## 演示 ##
 Demo的演示地址：[2048演示](https://hyhang.github.io/2048/)
