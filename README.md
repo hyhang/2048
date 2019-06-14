@@ -4,7 +4,7 @@
 ## 代码组织 ##
 使用MVC（Model View Controller）框架，将业务逻辑、数据、界面显示分离来组织代码。
 
-## 游戏架构 ##
+## 游戏结构 ##
 UI —— HTML/CSS
 
 游戏主逻辑 —— js/jquery
